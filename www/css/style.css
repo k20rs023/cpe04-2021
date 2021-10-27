@@ -65,7 +65,7 @@ button{
     }
 
     #remain {
-        color: #ff0000;
+        color: greenyellow;
         font-size: 20px;
         text-align: center;
         position:absolute; top:310px; 
@@ -73,7 +73,7 @@ button{
     }
     
     #time {
-        color: #ff0000;
+        color: rebeccapurple;
         font-size: 20px;
         text-align: center;
         position:absolute; top:340px; 
