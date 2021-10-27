@@ -99,7 +99,7 @@
     function clock(hour,minute,second,hide){
         var canvas = $('#mycanvas')[0];
         var ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)'; 
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.5)'; 
         ctx.fillRect(0,0,canvas.width,canvas.height);
         var cx = canvas.width/2;
         var cy = canvas.height/2;
@@ -224,6 +224,9 @@
 
          $("body").css("background", "#7e8d9a");
 
+          $("#disp1").html("Neko Mode!");
+          $("#disp1").css("font-family", "fantasy");
+
         var canvas2 = $("#mycanvas2")[0];
         var ctx2 = canvas2.getContext("2d");
         var img2 = new Image();
@@ -233,6 +236,8 @@
           };
           
     }
+
+    
 
     
  
@@ -260,6 +265,8 @@
 
     <div id="minuteStr">〇</div>
     <div id="secondStr">〇</div>
+
+    <div id="disp1" class="out">KSU Timer </div>
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>

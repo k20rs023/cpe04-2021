@@ -53,6 +53,16 @@ button{
   content: " sec.";
 }
 
+.out {
+  border: solid 1px white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  position:absolute; top:15px; left:32%; width:30%; height:20px; 
+  background: #F3F0D7;
+}
+
 
 
     #minuteStr {
@@ -70,6 +80,7 @@ button{
         position:absolute; top:250px; 
         left:10px; right:10px;
     }
+
 
     #remain {
         color: rebeccapurple;
@@ -90,6 +101,7 @@ button{
     }
     
     #mycanvas {
+        color: #A2D2FF;
         font-size: 40px;
         text-align: center;
         position:absolute; top:210px; 
