@@ -1,36 +1,36 @@
 /**/
 
 body{
-  background: skyblue;
+  background: #A2D2FF;
 }
 
 button{
   color: blue;
-  font-family: fantasy;
-  border-radius: 20px;
+  font-family: time;
+  border-radius: 50px;
 }
 
 #btnA{
-  background-color: yellow;
-  color: green;
+  background-color: #fda2ff;
+  color: white;
   font-weight: bold;
 }
 
 #btnB{
-  background-color:red; 
+  background-color: #ffcfa2;
   color: white;
   font-weight: bold;
 }
 
 #btnC{
-  background-color:blue; 
+  background-color: #a3ffa2; 
   color: white;
   font-weight: bold;
 }
 
 #btnD{
-  background-color: palegreen; 
-  color: black;
+  background-color: #78ff15 ; 
+  color: white;
   font-weight: bold;
 }
 
@@ -40,12 +40,17 @@ button{
   margin: 0 auto;
 }
 
+#remain{
+  width: 50%;
+  margin: 0 auto;
+}
+
 #remain::after{
-  content: "秒";
+  content: " sec.";
 }
 
 #time::after{
-  content: "秒";
+  content: " sec.";
 }
 
 
@@ -67,11 +72,12 @@ button{
     }
 
     #remain {
-        color: greenyellow;
+        color: rebeccapurple;
         font-size: 20px;
         text-align: center;
         position:absolute; top:310px; 
         left:10px; right:10px;
+        background-color: white;
     }
     
     #time {
@@ -80,6 +86,7 @@ button{
         text-align: center;
         position:absolute; top:340px; 
         left:10px; right:10px;
+        background-color: white;
     }
     
     #mycanvas {
@@ -105,7 +112,7 @@ button{
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     #btnD {
-        font-size: 15px;
+        font-size: 24px;
         position:absolute; top:550px; left:30%; width:40%; height:60px; 
     }
     

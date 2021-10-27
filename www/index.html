@@ -195,7 +195,6 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
-        
     }
 
     // ButtonCがクリックされた時の処理
@@ -214,10 +213,25 @@
         $("#btnB").css("background-color", "gray");
         $("#btnC").css("background-color", "lightblue");
 
-        $("#btnA").css("font-family", "time");
-        $("#btnB").css("font-family", "time");
-        $("#btnC").css("font-family", "time");
+        $("#btnA").css("font-family", "fantasy");
+        $("#btnB").css("font-family", "fantasy");
+        $("#btnC").css("font-family", "fantasy");
 
+        $("#minute").css("font-family", "fantasy");
+        $("#second").css("font-family", "fantasy");
+        $("#time").css("font-family", "fantasy");
+        $("#remain").css("font-family", "fantasy");
+
+         $("body").css("background", "#7e8d9a");
+
+        var canvas2 = $("#mycanvas2")[0];
+        var ctx2 = canvas2.getContext("2d");
+        var img2 = new Image();
+        img2.src = "cat.jpg"; //写真素材： https://www.pakutaso.com/20111054301post-821.html
+        img2.onload = function() {
+          ctx2.drawImage(img2, 0, 0, 350, 500);
+          };
+          
     }
 
     
@@ -242,6 +256,7 @@
 </head>
 <body>
     <canvas id="mycanvas" width="200" height="200">Test</canvas>
+    <canvas id="mycanvas2" width="400" height="400">Test</canvas>
 
     <div id="minuteStr">〇</div>
     <div id="secondStr">〇</div>
