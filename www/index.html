@@ -226,6 +226,9 @@
         $("#time").css("font-family", "fantasy");
         $("#remain").css("font-family", "fantasy");
 
+         $("#time").css("color", "rebeccapurple");
+        $("#remain").css("color", "rebeccapurple");
+
         $("body").css("background", "#7e8d9a");
 
         $("#disp1").html("Neko Mode!");
@@ -239,24 +242,25 @@
           ctx2.drawImage(img2, 4, 0, 350, 500);
         };
       } else {
+        $("#btnA").css("background-color", "#51a77a");
+        $("#btnB").css("background-color", "#51a6a7");
+        $("#btnC").css("background-color", "#5184a7");
 
-        $("#btnA").css("background-color", "lightgray");
-        $("#btnB").css("background-color", "gray");
-        $("#btnC").css("background-color", "lightblue");
+        $("#btnA").css("font-family", "cursive");
+        $("#btnB").css("font-family", "cursive");
+        $("#btnC").css("font-family", "cursive");
 
-        $("#btnA").css("font-family", "fantasy");
-        $("#btnB").css("font-family", "fantasy");
-        $("#btnC").css("font-family", "fantasy");
+        $("#minute").css("font-family", "cursive");
+        $("#second").css("font-family", "cursive");
+        $("#time").css("font-family", "cursive");
+        $("#remain").css("font-family", "cursive");
+        $("#time").css("color", "#516da7");
+        $("#remain").css("color", "#516da7");
 
-        $("#minute").css("font-family", "fantasy");
-        $("#second").css("font-family", "fantasy");
-        $("#time").css("font-family", "fantasy");
-        $("#remain").css("font-family", "fantasy");
-
-        $("body").css("background", "#7e8d9a");
+        $("body").css("background", "#A75251");
 
         $("#disp1").html("dog Mode!");
-        $("#disp1").css("font-family", "fantasy");
+        $("#disp1").css("font-family", "cursive");
 
         var canvas3 = $("#mycanvas3")[0];
         var ctx3 = canvas3.getContext("2d");
