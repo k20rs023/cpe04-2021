@@ -211,7 +211,7 @@
 
     //ButtonDがクリックされたときの処理
     function btnDClick(e) {
-      if (sum % 2 == 0) {
+      if (sum == 0) {
 
         $("#btnA").css("background-color", "lightgray");
         $("#btnB").css("background-color", "gray");
@@ -239,7 +239,7 @@
         var img2 = new Image();
         img2.src = "cat.jpg"; //写真素材： https://www.pakutaso.com/20111054301post-821.html
         img2.onload = function() {
-          ctx2.drawImage(img2, 0, 0, 350, 500);
+          ctx2.drawImage(img2, 10, 0, 350, 500);
         };
 
 
@@ -271,11 +271,11 @@
         var img3 = new Image();
         img3.src = "dog.jpg"; //写真素材： https://www.pakutaso.com/photo/2321.html
         img3.onload = function() {
-          ctx3.drawImage(img3, 0, 0, 350, 500);
+          ctx3.drawImage(img3, 10, 0, 350, 500);
         };
       }
-      sum += 1;
 
+      sum += 1;
 
     }
 
@@ -303,9 +303,9 @@
 
 <body>
   <div class="canvas-wrapper">
-    <canvas id="mycanvas" width="200" height="200">Test</canvas>
-    <canvas id="mycanvas2" width="380" height="380">Test</canvas>
-    <canvas id="mycanvas3" width="380" height="380">Test</canvas>
+    <canvas id="mycanvas" width="175" height="175">Test</canvas>
+    <canvas id="mycanvas2" width="340" height="340">Test</canvas>
+    <canvas id="mycanvas3" width="340" height="340">Test</canvas>
 
   </div>
 
