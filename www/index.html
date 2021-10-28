@@ -184,6 +184,7 @@
       var audio = new Audio();
       audio.src = "pin.wav";
       audio.play();
+
     }
 
     // ButtonAがクリックされた時の処理
@@ -243,7 +244,7 @@
         };
 
 
-      } else {
+      } else if (sum == 1) {
         $("#btnA").css("background-color", "#51a77a");
         $("#btnB").css("background-color", "#51a6a7");
         $("#btnC").css("background-color", "#5184a7");
@@ -272,6 +273,66 @@
         img3.src = "dog.jpg"; //写真素材： https://www.pakutaso.com/photo/2321.html
         img3.onload = function() {
           ctx3.drawImage(img3, 10, 0, 350, 500);
+        };
+      } else if(sum == 2) {
+        $("#btnA").css("background-color", "#ffcdb2");
+        $("#btnB").css("background-color", "#dfd9b0");
+        $("#btnC").css("background-color", "#bfe1be");
+
+        $("#btnA").css("font-family", "Noto Sans JP");
+        $("#btnB").css("font-family", "Noto Sans JP");
+        $("#btnC").css("font-family", "Noto Sans JP");
+
+        $("#minute").css("font-family", "Noto Sans JP");
+        $("#second").css("font-family", "Noto Sans JP");
+        $("#time").css("font-family", "Noto Sans JP");
+        $("#remain").css("font-family", "Noto Sans JP");
+        $("#time").css("color", "##83e6fc");
+        $("#remain").css("color", "##83e6fc");
+
+        $("body").css("background", "#D9D6E6");
+
+        $(".out").css("background", "#fec5ff");
+
+        $("#disp1").html("Suzume Mode!");
+        $("#disp1").css("font-family", "Noto Sans JP");
+
+        var canvas4 = $("#mycanvas4")[0];
+        var ctx4 = canvas4.getContext("2d");
+        var img4 = new Image();
+        img4.src = "bird.jpg"; //写真素材： https://www.pakutaso.com/photo/44637.html
+        img4.onload = function() {
+          ctx4.drawImage(img4, -80, 0, 500, 500);
+        };
+      }else{
+          $("#btnA").css("background-color", "#c0dce0");
+        $("#btnB").css("background-color", "#cac0e0");
+        $("#btnC").css("background-color", "#e0c4c0");
+
+        $("#btnA").css("font-family", "sans-serif");
+        $("#btnB").css("font-family", "sans-serif");
+        $("#btnC").css("font-family", "sans-serif");
+
+        $("#minute").css("font-family", "sans-serif");
+        $("#second").css("font-family", "sans-serif");
+        $("#time").css("font-family", "sans-serif");
+        $("#remain").css("font-family", "sans-serif");
+        $("#time").css("color", "##83e6fc");
+        $("#remain").css("color", "##83e6fc");
+
+        $("body").css("background", "#E0D7C0");
+
+        $(".out").css("background", "#e2da88");
+
+        $("#disp1").html("Tora Mode!");
+        $("#disp1").css("font-family", "sans-serif");
+
+        var canvas5 = $("#mycanvas5")[0];
+        var ctx5 = canvas5.getContext("2d");
+        var img5 = new Image();
+        img5.src = "tiger.jpeg"; //写真素材： https://www.pakutaso.com/20200615155post-27519.html
+        img5.onload = function() {
+          ctx5.drawImage(img5, -20, 0, 500, 500);
         };
       }
 
@@ -306,6 +367,8 @@
     <canvas id="mycanvas" width="175" height="175">Test</canvas>
     <canvas id="mycanvas2" width="340" height="340">Test</canvas>
     <canvas id="mycanvas3" width="340" height="340">Test</canvas>
+    <canvas id="mycanvas4" width="340" height="340">Test</canvas>
+    <canvas id="mycanvas5" width="340" height="340">Test</canvas>
 
   </div>
 
